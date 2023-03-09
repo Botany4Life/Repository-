@@ -19,6 +19,18 @@ if __name__ == '__main__':
 
 menu = True
 
+#Thomas adding decode function
+def decode(password):
+    decoded_password = ""
+    for char in password:
+        num = int(char)
+        num -= 3
+        if num < 0:
+            num += 10
+        decoded_password += str(num)
+    return decoded_password
+
+
 
 def main():
 
